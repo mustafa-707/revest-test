@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:drift/drift.dart","transitive":false},{"uri":"package:revest/data/database/db.dart","transitive":false},{"uri":"package:revest/domain/repository/products_repository.dart","transitive":false},{"uri":"package:revest/data/database/dao/product_dao.dart","transitive":false}],"elements":[]}

@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:drift/drift.dart","transitive":false},{"uri":"package:revest/data/database/db.dart","transitive":false},{"uri":"package:revest/data/database/schema/product_schema.dart","transitive":false}],"elements":[{"kind":"databaseAccessor","name":"ProductDao","dart_name":"ProductDao"}]}

@@ -1,0 +1,68 @@
+{
+  "elements": {
+    "ProductDao": {
+      "id": {
+        "library_uri": "package:revest/data/database/dao/product_dao.dart",
+        "name": "ProductDao"
+      },
+      "declaration": {
+        "source_uri": "package:revest/data/database/dao/product_dao.dart",
+        "offset": 282,
+        "name": "ProductDao"
+      },
+      "references": [
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "products"
+        },
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "product_images"
+        }
+      ],
+      "type": "dao",
+      "tables": [
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "products"
+        },
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "categories"
+        },
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "product_images"
+        }
+      ],
+      "views": [],
+      "includes": [],
+      "queries": [],
+      "dart_type": {
+        "elements": [
+          {
+            "lexeme": "ProductDao",
+            "import_uri": "package:revest/data/database/dao/product_dao.dart"
+          }
+        ]
+      },
+      "database": {
+        "elements": [
+          {
+            "lexeme": "AppDatabase",
+            "import_uri": "package:revest/data/database/db.dart"
+          }
+        ]
+      }
+    }
+  },
+  "imports": [
+    "package:drift/drift.dart",
+    "package:revest/data/database/db.dart",
+    "package:revest/data/database/schema/product_schema.dart"
+  ]
+}

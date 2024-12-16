@@ -1,0 +1,15 @@
+# flutter pub run flutter_launcher_icons
+flutter_launcher_icons:
+  image_path: "assets/logo/fgi.png"
+
+  android: "ic_launcher"
+  image_path_android: "assets/logo/fgi.png"
+  adaptive_icon_background: "#FBFBFB"
+  adaptive_icon_foreground: "assets/logo/fgi.png"
+
+  ios: true
+  image_path_ios: "assets/logo/fgi.png"
+  remove_alpha_channel_ios: true
+  remove_alpha_ios: true
+  # image_path_ios_tinted_grayscale: "assets/icon/icon_tinted.png"
+  # desaturate_tinted_to_grayscale_ios: true

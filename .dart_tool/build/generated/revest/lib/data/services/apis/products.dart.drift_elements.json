@@ -1,0 +1,1 @@
+{"valid_import":true,"imports":[{"uri":"package:revest/data/models/response/product_response.dart","transitive":false},{"uri":"package:revest/data/services/endpoints.api.dart","transitive":false},{"uri":"package:revest/data/services/http.api.dart","transitive":false},{"uri":"package:revest/domain/repository/products_repository.dart","transitive":false}],"elements":[]}

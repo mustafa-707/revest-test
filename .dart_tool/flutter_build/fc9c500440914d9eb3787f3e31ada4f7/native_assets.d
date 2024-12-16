@@ -1,0 +1,1 @@
+ /Users/is10vmust/Documents/projects/flutter-apps/revest/revest-test/.dart_tool/flutter_build/fc9c500440914d9eb3787f3e31ada4f7/native_assets.yaml: 

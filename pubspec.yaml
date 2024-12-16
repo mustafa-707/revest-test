@@ -1,0 +1,73 @@
+name: revest
+description: "Revest Inc. Flutter Technical Test App"
+
+version: 1.0.0+1
+
+environment:
+  sdk: 3.6.0
+  flutter: ">=3.27.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Utils
+  intl: 0.19.0
+  flutter_native_splash: 2.4.3
+
+  # Look and feel
+  flutter_svg: 2.0.16
+  google_fonts: 6.2.1
+  photo_view: 0.15.0
+
+  # Networking
+  http: 1.2.2
+
+  # State Management
+  hooks_riverpod: 2.6.1
+  flutter_hooks: 0.20.5
+
+  # Data
+  shared_preferences: 2.3.3
+  flutter_dotenv: 5.2.1
+  freezed_annotation: 2.4.4
+  json_annotation: 4.9.0
+  drift: 2.22.1
+  path_provider: 2.1.5
+  path: 1.9.0
+
+  # My packages
+  visibility_cached_image: 0.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: 5.0.0
+  build_runner: 2.4.13
+  freezed: 2.5.7
+  json_serializable: 6.9.0
+  drift_dev: 2.22.1
+  sqlite3_flutter_libs: 0.5.27
+  flutter_launcher_icons: 0.14.2
+
+flutter_native_splash:
+  color: "#FBFBFB"
+  android_12:
+    color: "#FBFBFB"
+
+flutter:
+  uses-material-design: true
+  # run this to generate a Freezed Models : flutter pub run build_runner build --delete-conflicting-outputs
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/logo/
+    - assets/icons/
+    - assets/.env.production
+    - assets/.env.dev
+# prevent accidental publishing to pub.dev using `pub publish`
+publish_to: "none"

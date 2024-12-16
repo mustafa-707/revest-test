@@ -1,0 +1,440 @@
+{
+  "elements": {
+    "products": {
+      "id": {
+        "library_uri": "package:revest/data/database/schema/product_schema.dart",
+        "name": "products"
+      },
+      "declaration": {
+        "source_uri": "package:revest/data/database/schema/product_schema.dart",
+        "offset": 70,
+        "name": "Products"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 111,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "title",
+          "nameInDart": "title",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 163,
+            "name": "title"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "description",
+          "nameInDart": "description",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 199,
+            "name": "description"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "category",
+          "nameInDart": "category",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 241,
+            "name": "category"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "price",
+          "nameInDart": "price",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 280,
+            "name": "price"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "discount_percentage",
+          "nameInDart": "discountPercentage",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 316,
+            "name": "discountPercentage"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "double"
+          },
+          "nullable": false,
+          "nameInSql": "rating",
+          "nameInDart": "rating",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 365,
+            "name": "rating"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "stock",
+          "nameInDart": "stock",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 401,
+            "name": "stock"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "brand",
+          "nameInDart": "brand",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 440,
+            "name": "brand"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": true,
+          "nameInSql": "thumbnail",
+          "nameInDart": "thumbnail",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 476,
+            "name": "thumbnail"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Products",
+      "row_class_name": "Product",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "categories": {
+      "id": {
+        "library_uri": "package:revest/data/database/schema/product_schema.dart",
+        "name": "categories"
+      },
+      "declaration": {
+        "source_uri": "package:revest/data/database/schema/product_schema.dart",
+        "offset": 545,
+        "name": "Categories"
+      },
+      "references": [],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 588,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "name",
+          "nameInDart": "name",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 640,
+            "name": "name"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "Categories",
+      "row_class_name": "Category",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    },
+    "product_images": {
+      "id": {
+        "library_uri": "package:revest/data/database/schema/product_schema.dart",
+        "name": "product_images"
+      },
+      "declaration": {
+        "source_uri": "package:revest/data/database/schema/product_schema.dart",
+        "offset": 697,
+        "name": "ProductImages"
+      },
+      "references": [
+        {
+          "library_uri": "package:revest/data/database/schema/product_schema.dart",
+          "name": "products"
+        }
+      ],
+      "type": "table",
+      "columns": [
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "id",
+          "nameInDart": "id",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 743,
+            "name": "id"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "primary",
+              "is_auto_increment": true
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "int"
+          },
+          "nullable": false,
+          "nameInSql": "product_id",
+          "nameInDart": "productId",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 794,
+            "name": "productId"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [
+            {
+              "type": "foreign_key",
+              "column": {
+                "table": {
+                  "library_uri": "package:revest/data/database/schema/product_schema.dart",
+                  "name": "products"
+                },
+                "name": "id"
+              },
+              "onUpdate": null,
+              "onDelete": null,
+              "initiallyDeferred": false
+            }
+          ],
+          "customConstraints": null
+        },
+        {
+          "sqlType": {
+            "builtin": "string"
+          },
+          "nullable": false,
+          "nameInSql": "image_url",
+          "nameInDart": "imageUrl",
+          "declaration": {
+            "source_uri": "package:revest/data/database/schema/product_schema.dart",
+            "offset": 863,
+            "name": "imageUrl"
+          },
+          "typeConverter": null,
+          "clientDefaultCode": null,
+          "defaultArgument": null,
+          "overriddenJsonName": null,
+          "referenceName": null,
+          "documentationComment": null,
+          "constraints": [],
+          "customConstraints": null
+        }
+      ],
+      "existing_data_class": null,
+      "table_constraints": [],
+      "custom_parent_class": null,
+      "interfaces_for_row_class": [],
+      "fixed_entity_info_name": null,
+      "base_dart_name": "ProductImages",
+      "row_class_name": "ProductImage",
+      "companion_class_name": null,
+      "without_rowid": false,
+      "strict": false,
+      "write_default_constraints": true,
+      "custom_constraints": [],
+      "attached_indices": []
+    }
+  },
+  "imports": [
+    "package:drift/drift.dart"
+  ]
+}
