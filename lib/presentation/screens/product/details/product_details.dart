@@ -45,58 +45,69 @@ class ProductDetails extends HookConsumerWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
                       spacing: 8,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              product.title,
-                              style: context.titleLarge,
-                            ),
-                            Visibility(
-                              visible: product.category != null,
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  color: context.secondaryColor,
-                                  borderRadius: BorderRadius.circular(12),
+                        FittedBox(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              SizedBox(
+                                width: context.width * 0.72,
+                                child: Text(
+                                  product.title,
+                                  style: context.titleLarge,
                                 ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    product.category ?? '',
-                                    style: GoogleFonts.gabarito(
-                                      color: context.onSecondaryColor,
-                                      fontSize: 18,
+                              ),
+                              Visibility(
+                                visible: product.category != null,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: context.secondaryColor,
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(8.0),
+                                    child: Text(
+                                      product.category ?? '',
+                                      style: GoogleFonts.gabarito(
+                                        color: context.onSecondaryColor,
+                                        fontSize: 18,
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                         Text(
                           product.brand?.isEmpty ?? true ? 'Unknown Brand' : product.brand!,
                           style: context.bodyLarge,
                         ),
                         SizedBox(height: 12),
-                        Container(
-                          decoration: BoxDecoration(
-                            color: context.secondaryColor,
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(Icons.star, color: Colors.amber, size: 20),
-                                SizedBox(width: 4),
-                                Text(
-                                  '${product.rating}',
-                                  style: context.titleMedium,
-                                ),
-                              ],
+                        Align(
+                          alignment: AlignmentDirectional.centerStart,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: context.secondaryColor,
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Icon(Icons.star, color: Colors.amber, size: 20),
+                                  SizedBox(width: 4),
+                                  Text(
+                                    '${product.rating}',
+                                    style: context.titleMedium.copyWith(
+                                      color: context.onPrimaryColor,
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                           ),
                         ),
@@ -112,6 +123,7 @@ class ProductDetails extends HookConsumerWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: 132),
                 ],
               ),
               Positioned.fill(
